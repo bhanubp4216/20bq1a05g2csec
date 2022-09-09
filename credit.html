@@ -1,0 +1,18 @@
+<html>
+<body>
+    
+    <script>
+        function cardnumber(inputtxt)
+        {
+            var cardno= /^(?:3[47][0-9]{13})$/;
+            if(inputtxt.match(cardno))
+            {
+                return true;
+            }
+            else{
+                alert("not a valid american express credit card number!");
+                return false;
+            }
+        }
+     document.write(cardnumber("341273432345678"))
+    </script></body></html>
